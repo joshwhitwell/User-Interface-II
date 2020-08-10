@@ -217,7 +217,7 @@ footer {
 }
 
 .footerDiv p, .footerDiv div, .footerDiv a {
-	margin: 1%;
+	margin: 1.5%;
 }
 
 .socialMedia {
@@ -248,16 +248,13 @@ footer a:hover {
 }
 
 @media (max-width: 500px) {
-	* {
-		border: 1px solid black;
-	}
-
 	/*Header Mobile Styles*/
 	header {
 		flex-direction: column;
 		align-items: center;
+		text-align: center;
 		padding: 0%;
-		margin-bottom: 3%;
+		margin: 0%;
 	}
 	
 	nav {
@@ -277,50 +274,55 @@ footer a:hover {
 	/*Bio Section Mobile Styles*/
 	.bioSection {
 		flex-direction: column;
-		margin-top: 3%;
+		margin: 0%;
 	}
 	
 	.bioLeft {
 		width: 100%;
-		display: flex;
-		justify-content: center;
 	}
 	
 	.bioRight {
 		width: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-end;
+		align-items: center;
+		text-align: center;
 	}
 	
 	.bioImageDiv {
-		width: 90%;
-		margin: 5%;
+		width: 95%;
+		margin: 5% 5% 2% 5%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
 	
-	
 	.bioRight h2, .bioRight a, .bioRight p {
 		width: 90%;
-		margin: 4% 5%;
+		margin: 2% 0%;
 	}
 	
 	.bioSection a {
-		display: inline-block;
-		width: 25%;
-		border-radius: 10px;
-		background: #293249;
-		color: #ded2cf;
-		text-decoration: none;
-		text-align: center;
-		border: 2px solid #293249;
+		width: 35%;
+	}
+
+	/*Project Gallery Mobile Styles*/
+	.projectContainer {
+		width: 48%;
+		margin: 5% 0%;
+	}
+
+	/*Footer Mobile Styles*/	
+	.socialMedia {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
 	}
 	
-	.bioSection a:hover {
-		background: #aca1a1;
-		color: #293249;
-		font-weight: bold;
+	footer a {
+		width: 45%;
+	}
+
+	.socialMedia a {
+		width: 35%;
+		margin: 1% 0;
 	}
 }
