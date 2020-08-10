@@ -241,3 +241,86 @@ footer a:hover {
 	background: #293249;
 	color: #ded2cf;
 }
+
+/*Media Queries*/
+@media (max-width: 800px) {
+	
+}
+
+@media (max-width: 500px) {
+	* {
+		border: 1px solid black;
+	}
+
+	/*Header Mobile Styles*/
+	header {
+		flex-direction: column;
+		align-items: center;
+		padding: 0%;
+		margin-bottom: 3%;
+	}
+	
+	nav {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	a.headerNav {
+		width: 35%;
+		border-radius: 10px;
+		text-align: center;
+		border: 2px solid #ded2cf;
+		margin: 1% 0;
+	}
+
+	/*Bio Section Mobile Styles*/
+	.bioSection {
+		flex-direction: column;
+		margin-top: 3%;
+	}
+	
+	.bioLeft {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	
+	.bioRight {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+	
+	.bioImageDiv {
+		width: 90%;
+		margin: 5%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	
+	.bioRight h2, .bioRight a, .bioRight p {
+		width: 90%;
+		margin: 4% 5%;
+	}
+	
+	.bioSection a {
+		display: inline-block;
+		width: 25%;
+		border-radius: 10px;
+		background: #293249;
+		color: #ded2cf;
+		text-decoration: none;
+		text-align: center;
+		border: 2px solid #293249;
+	}
+	
+	.bioSection a:hover {
+		background: #aca1a1;
+		color: #293249;
+		font-weight: bold;
+	}
+}
