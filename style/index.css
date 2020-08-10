@@ -75,6 +75,7 @@ h2 {
 
 a {
 	font-weight: bold;
+	padding: 0 2%;
 }
 
 img {
@@ -156,7 +157,7 @@ a.headerNav:hover {
 
 .bioSection a {
 	display: inline-block;
-	width: 25%;
+	width: 45%;
 	border-radius: 10px;
 	background: #293249;
 	color: #ded2cf;
@@ -210,7 +211,7 @@ footer {
 }
 
 .footerDiv {
-	padding: 3%;
+	padding: 0 2%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -221,9 +222,9 @@ footer {
 }
 
 .socialMedia {
-	width: 50%;
+	width: 100%;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 }
 
 footer a {
@@ -243,8 +244,28 @@ footer a:hover {
 }
 
 /*Media Queries*/
+/*Bio Section 800px Styles*/
 @media (max-width: 800px) {
+	.bioSection {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 3%;
+	}
 	
+	.bioLeft {
+		width: 60%;
+	}
+	
+	.bioRight {
+		width: 90%;
+		align-items: center;
+		text-align: center;
+	}
+
+	.bioRight h2, .bioRight a, .bioRight p {
+		margin: 2%;
+	}
 }
 
 @media (max-width: 500px) {
